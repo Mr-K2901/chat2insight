@@ -1,0 +1,16 @@
+{
+  "name": "chat2insight",
+  "version": "0.1.0",
+  "private": true,
+  "description": "WhatsApp conversation intelligence adapter",
+  "main": "apps/whatsapp/index.js",
+  "scripts": {
+    "whatsapp": "node apps/whatsapp/index.js",
+    "check": "node --check apps/whatsapp/index.js && node --check apps/whatsapp/client.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.26.0"
+  }
+}

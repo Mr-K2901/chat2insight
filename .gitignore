@@ -218,14 +218,34 @@ __marimo__/
 .streamlit/secrets.toml
 
 
+# --- chat2insight project-specific ---
 .env
-.wwebjs_auth/
-data/
-*.db
-*.sqlite
-audio/
-images/
-exports/
-__pycache__/
 node_modules/
-.venv/
+
+# WhatsApp session/auth data (private, never commit)
+.wwebjs_auth/
+.whatsapp_auth/
+
+# Local databases
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Local runtime data (private chat content) - keep directory placeholders
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/audio/*
+!data/audio/.gitkeep
+data/images/*
+!data/images/.gitkeep
+data/exports/*
+!data/exports/.gitkeep
+data/summaries/*
+!data/summaries/.gitkeep
+
+# Logs (may contain private message content) - keep directory placeholder
+logs/*
+!logs/.gitkeep

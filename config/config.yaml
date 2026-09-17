@@ -1,0 +1,15 @@
+app:
+  name: chat2insight
+  environment: development
+  timezone: UTC
+
+processing:
+  chunk_size: 4000
+  max_context_messages: 100
+
+ai:
+  ollama_base_url: http://localhost:11434
+  model: llama3.2
+
+storage:
+  database_url: sqlite:///./data/chat2insight.db
