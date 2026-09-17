@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+.env
+.wwebjs_auth/
+data/
+*.db
+*.sqlite
+audio/
+images/
+exports/
+__pycache__/
+node_modules/
+.venv/
